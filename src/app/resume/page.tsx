@@ -12,7 +12,7 @@ export default function Resume() {
             Dilip Prasad
           </h1>
           <p className="text-xl text-muted-foreground">
-            Security Analyst | Penetration Tester | Bug Bounty Researcher
+            CRT, OSCP & CPSA-Certified Penetration Tester
           </p>
         </div>
 
@@ -21,14 +21,18 @@ export default function Resume() {
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
             <span className="text-primary">{'{'}</span> About <span className="text-primary">{'}'}</span>
           </h2>
+
           <p className="text-muted-foreground mb-4">
-            OSCP-certified Penetration Tester with hands-on experience in web and network exploitation,
-            AI-assisted vulnerability analysis, and automation scripting. Proven success identifying
-            and reporting over 50+ high-severity vulnerabilities across enterprise and bug bounty programs.
+            CRT, OSCP and CPSA-certified Penetration Tester with experience delivering web, API, internal,
+            cloud and Active Directory assessments for enterprise clients across UK, EU and US sectors.
+            Skilled in full attack-chain exploitation, domain compromise, adversary simulation, recon automation
+            and high-quality reporting tailored for engineering and leadership audiences.
           </p>
+
           <p className="text-muted-foreground mb-4">
-            Passionate about red teaming, AI-driven exploitation, and developing scalable offensive security frameworks.
-            Experienced in communicating complex vulnerabilities clearly for remediation and impact understanding.
+            Adept at articulating business risk, guiding remediation and delivering measurable security 
+            improvements across the full engagement lifecycle — from scoping and testing through to evidence 
+            collection, reporting and client debriefs.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm mt-4">
@@ -59,6 +63,7 @@ export default function Resume() {
               <span className="text-muted-foreground">Phone:</span>
               <span>+44 7407 004776</span>
             </div>
+
             {/* GitHub link */}
             <div className="flex items-center gap-2 md:col-span-2">
               <span className="text-primary">→</span>
@@ -82,54 +87,33 @@ export default function Resume() {
           </h2>
 
           <div className="space-y-8">
-            {/* Bug Bounty Hunter */}
-            <div className="border-l-2 border-primary pl-4">
-              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                <h3 className="text-xl font-bold">Bug Bounty Hunter</h3>
-                <span className="text-muted-foreground text-sm">September 2023 – Present</span>
-              </div>
-              <p className="text-muted-foreground mb-2">
-                Independent Security Researcher — Multiple Enterprise Programs
-              </p>
-              <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                <li>
-                  Conducted <strong>independent web and API vulnerability research</strong> for enterprise applications.
-                </li>
-                <li>
-                  Discovered and responsibly disclosed <strong>critical vulnerabilities</strong> such as IDOR, SSRF, RCE, and authentication bypasses.
-                </li>
-                <li>
-                  Performed <strong>deep reconnaissance and chain exploitation</strong> to demonstrate real-world business impact.
-                </li>
-                <li>
-                  Developed <strong>custom Python automation tools</strong> for recon, fuzzing, and parameter discovery.
-                </li>
-                <li>
-                  Integrated findings into professional workflows, enhancing <strong>exploit methodology and efficiency</strong>.
-                </li>
-              </ul>
-            </div>
 
-            {/* Penetration Tester */}
+            {/* Securin */}
             <div className="border-l-2 border-primary pl-4">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                <h3 className="text-xl font-bold">Penetration Tester — Securin Inc.</h3>
-                <span className="text-muted-foreground text-sm">Aug 2021 – Aug 2023</span>
+                <h3 className="text-xl font-bold">Penetration Tester — Securin Inc</h3>
+                <span className="text-muted-foreground text-sm">2021 – 2023</span>
               </div>
               <p className="text-muted-foreground mb-2">Chennai, India</p>
               <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                <li>
-                  Conducted web, API, and network penetration testing engagements across healthcare and finance sectors.
-                </li>
-                <li>
-                  Discovered authentication bypasses, business logic flaws, and chained exploits to escalate impact.
-                </li>
-                <li>
-                  Built Python scripts automating enumeration and payload generation, reducing manual workload by 40%.
-                </li>
-                <li>
-                  Delivered detailed reports with clear remediation guidance to technical and executive stakeholders.
-                </li>
+                <li>Delivered web, API, internal, cloud and mobile assessments using CREST/PTES methodologies.</li>
+                <li>Performed full Active Directory attack paths (Kerberoasting, AS-REP, ADCS, ACL abuse, DCSync).</li>
+                <li>Lateral movement, pivoting/tunneling (SSH, Chisel, Ligolo-NG), SOCKS relays, segmentation bypass.</li>
+                <li>Developed automation for recon, payload generation and reporting pipelines.</li>
+                <li>Produced high-quality reports with evidence, risk impact and executive summaries.</li>
+              </ul>
+            </div>
+
+            {/* Bug Bounty */}
+            <div className="border-l-2 border-primary pl-4">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                <h3 className="text-xl font-bold">Bug Bounty Hunter</h3>
+                <span className="text-muted-foreground text-sm">2023 – Present</span>
+              </div>
+              <p className="text-muted-foreground mb-2">Leicester, UK</p>
+              <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                <li>Identified critical vulnerabilities (RCE, SSRF, IDOR, authentication bypass) via private programs.</li>
+                <li>Conducted advanced reconnaissance, endpoint analysis, and exploit chaining.</li>
               </ul>
             </div>
 
@@ -137,26 +121,11 @@ export default function Resume() {
             <div className="border-l-2 border-primary pl-4">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                 <h3 className="text-xl font-bold">Freelance Penetration Tester</h3>
-                <span className="text-muted-foreground text-sm">Jan 2021 – Aug 2021</span>
+                <span className="text-muted-foreground text-sm">2021</span>
               </div>
-              <p className="text-muted-foreground mb-2">Chennai, India</p>
               <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                <li>Participated in bug bounty programs on HackerOne and Bugcrowd.</li>
-                <li>Reported over 20 verified vulnerabilities via private VDP and BBP programs.</li>
-                <li>Used TryHackMe and HackTheBox for continuous skill development.</li>
-              </ul>
-            </div>
-
-            {/* App Developer */}
-            <div className="border-l-2 border-primary pl-4">
-              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                <h3 className="text-xl font-bold">App Developer — Sarada Technologies</h3>
-                <span className="text-muted-foreground text-sm">Jul 2020 – Dec 2020</span>
-              </div>
-              <p className="text-muted-foreground mb-2">Chennai, India</p>
-              <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                <li>Developed a home automation platform for IoT device control using AWS and GCP.</li>
-                <li>Integrated third-party devices securely via RESTful APIs.</li>
+                <li>Performed web, API and infrastructure testing for SME clients.</li>
+                <li>Delivered scoping, exploitation, reporting and client debrief end-to-end.</li>
               </ul>
             </div>
           </div>
@@ -169,44 +138,95 @@ export default function Resume() {
           </h2>
           <div className="space-y-4 text-sm text-muted-foreground">
             <div>
-              <h3 className="text-lg font-bold text-foreground">MSc Cyber Security — University of Birmingham</h3>
-              <p>Sep 2023 – Sep 2024</p>
-              <p className="italic">
-                Thesis: Integrating AI and Traditional Tools for Enhanced Penetration Testing
-              </p>
+              <h3 className="text-lg font-bold text-foreground">MSc Cybersecurity — University of Birmingham</h3>
+              <p>2023 – 2024</p>
             </div>
             <div>
               <h3 className="text-lg font-bold text-foreground">BSc Computer Science — SRM University</h3>
-              <p>Jul 2016 – May 2020</p>
-              <p className="italic">
-                Project: Blood Bank Donation System with Secure Access Controls
-              </p>
+              <p>2016 – 2020</p>
             </div>
           </div>
         </div>
 
         {/* CERTIFICATIONS */}
-        <div className="bg-card border border-border rounded-lg p-8">
+        <div className="bg-card border border-border rounded-lg p-8 mb-6">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
             <span className="text-primary">#</span> Certifications
           </h2>
-          <div className="bg-background border border-border rounded p-4 flex justify-between items-center">
-            <div>
-              <h3 className="text-lg font-bold text-primary">OSCP — Offensive Security Certified Professional</h3>
-              <p className="text-muted-foreground">Certified: October 2025</p>
+
+          <div className="space-y-4">
+
+            {/* OSCP */}
+            <div className="bg-background border border-border rounded p-4 flex justify-between items-center">
+              <div>
+                <h3 className="text-lg font-bold text-primary">
+                  OSCP — Offensive Security Certified Professional
+                </h3>
+                <p className="text-muted-foreground text-sm">Offensive Security</p>
+              </div>
+              <a
+                href="https://credentials.offsec.com/476ca3c6-9c4d-44da-aea7-35d9e40d25fa#acc.SeTc8XGy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline text-sm"
+              >
+                Verify →
+              </a>
             </div>
-            <a
-              href="https://credentials.offsec.com/476ca3c6-9c4d-44da-aea7-35d9e40d25fa#acc.SeTc8XGy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:underline text-sm"
-            >
-              Verify →
-            </a>
+
+            {/* CRT */}
+            <div className="bg-background border border-border rounded p-4 flex justify-between items-center">
+              <div>
+                <h3 className="text-lg font-bold text-primary">CRT — CREST Registered Tester</h3>
+                <p className="text-muted-foreground text-sm">CREST</p>
+              </div>
+              <a
+                href="https://www.credly.com/badges/8167d970-5e02-4634-a7d3-3d49fb34ebc4/public_url"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline text-sm"
+              >
+                Verify →
+              </a>
+            </div>
+
+            {/* CPSA */}
+            <div className="bg-background border border-border rounded p-4 flex justify-between items-center">
+              <div>
+                <h3 className="text-lg font-bold text-primary">CPSA — CREST Practitioner Security Analyst</h3>
+                <p className="text-muted-foreground text-sm">CREST</p>
+              </div>
+              <a
+                href="https://www.credly.com/badges/8181151e-a82f-487d-9227-5b2c6be1fec1/public_url"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline text-sm"
+              >
+                Verify →
+              </a>
+            </div>
+
           </div>
         </div>
 
-        {/* DOWNLOAD RESUME BUTTON */}
+        {/* RESEARCH & CONTRIBUTIONS */}
+        <div className="bg-card border border-border rounded-lg p-8 mb-6">
+          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+            <span className="text-primary">🔬</span> Research &amp; Contributions
+          </h2>
+          <ul className="list-disc list-inside space-y-2 text-sm text-muted-foreground">
+            <li>
+              Published exploit chains and methodology deep-dives focusing on Active Directory, cloud and
+              web exploitation, including privilege escalation, misconfiguration abuse and path chaining.
+            </li>
+            <li>
+              Developed custom tools for recon, enumeration, attack-surface mapping and exploitation workflow
+              automation using Python and PowerShell.
+            </li>
+          </ul>
+        </div>
+
+        {/* DOWNLOAD BUTTON */}
         <div className="mt-8 text-center">
           <a
             href="/resume/Dilip_Prasad.pdf"

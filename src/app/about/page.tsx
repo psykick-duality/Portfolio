@@ -5,11 +5,9 @@ import { useEffect, useState } from 'react';
 
 export default function About() {
   const [text, setText] = useState('Dilip Prasad aka psykick');
-  const [mounted, setMounted] = useState(false);
   const fullText = 'Dilip Prasad aka psykick';
 
   useEffect(() => {
-    setMounted(true);
     let i = 0;
     setText('');
     const typing = setInterval(() => {
@@ -36,20 +34,23 @@ export default function About() {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-primary to-green-400 bg-clip-text text-transparent" suppressHydrationWarning>
+          <h1
+            className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-primary to-green-400 bg-clip-text text-transparent"
+            suppressHydrationWarning
+          >
             {text}
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground/90 mb-6 font-medium">
-            Security Analyst | Penetration Tester
+            CRT, OSCP & CPSA-Certified Penetration Tester
           </p>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-3xl mx-auto leading-relaxed">
-            OSCP-certified professional specializing in infrastructure testing, web applications, mobile applications, and AI integration — leveraging Python automation and AI-driven offensive tooling.
+            Delivering web, API, internal, cloud and Active Directory assessments for enterprise clients across the UK, EU and US — with a focus on full attack-chain exploitation, domain compromise and adversary simulation.
           </p>
 
           <p className="text-base md:text-lg text-muted-foreground/80 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Passionate about blending creativity and automation to push the limits of penetration testing and make security testing smarter, faster, and more impactful.
+            Specialising in recon automation, privilege escalation, pivoting/tunneling and high-impact reporting that translates technical findings into clear business risk, remediation guidance and measurable security improvements.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -72,25 +73,25 @@ export default function About() {
       <section className="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-3 gap-6">
         <div className="p-6 bg-card border border-border rounded-lg hover:border-primary/50 transition-colors">
           <div className="text-primary text-3xl mb-4">{'>'}_</div>
-          <h3 className="text-xl font-bold mb-2">Penetration Testing</h3>
+          <h3 className="text-xl font-bold mb-2">Enterprise Penetration Testing</h3>
           <p className="text-muted-foreground">
-            2+ years conducting comprehensive web and network penetration tests across healthcare, finance, and e-commerce sectors.
+            Web, API, internal, cloud and mobile assessments for enterprise clients using CREST/PTES methodologies, with end-to-end coverage from scoping to reporting.
+          </p>
+        </div>
+
+        <div className="p-6 bg-card border border-border rounded-lg hover:border-primary/50 transition-colors">
+          <div className="text-primary text-3xl mb-4">{'{AD}'}</div>
+          <h3 className="text-xl font-bold mb-2">Active Directory & Internal Ops</h3>
+          <p className="text-muted-foreground">
+            25+ full domain compromises, multi-stage AD attack paths (Kerberoasting, AS-REP, delegation, ADCS, ACL abuse) and realistic lateral movement, pivoting and tunneling.
           </p>
         </div>
 
         <div className="p-6 bg-card border border-border rounded-lg hover:border-primary/50 transition-colors">
           <div className="text-primary text-3xl mb-4">{'{...}'}</div>
-          <h3 className="text-xl font-bold mb-2">AI-Assisted Security</h3>
+          <h3 className="text-xl font-bold mb-2">Automation & Research</h3>
           <p className="text-muted-foreground">
-            Developed Pentest Assistant, integrating AI with traditional tools to enhance vulnerability analysis accuracy and efficiency.
-          </p>
-        </div>
-
-        <div className="p-6 bg-card border border-border rounded-lg hover:border-primary/50 transition-colors">
-          <div className="text-primary text-3xl mb-4">{'[]'}</div>
-          <h3 className="text-xl font-bold mb-2">Python Automation</h3>
-          <p className="text-muted-foreground">
-            Built automation utilities that reduced manual testing and reporting time by over 40%, streamlining security assessments.
+            Built Pentest Assistant and internal Python/PowerShell tooling to automate recon, enumeration and reporting, plus published exploit chains and privesc research at psykick.uk.
           </p>
         </div>
       </section>
@@ -103,19 +104,21 @@ export default function About() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
+              <div className="text-4xl font-bold text-primary mb-2">25+</div>
+              <div className="text-sm text-muted-foreground">Domain Compromises</div>
+            </div>
+            <div>
               <div className="text-4xl font-bold text-primary mb-2">20+</div>
-              <div className="text-sm text-muted-foreground">High Severity Vulns</div>
+              <div className="text-sm text-muted-foreground">Critical Vulnerabilities</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-primary mb-2">35+</div>
-              <div className="text-sm text-muted-foreground">Bug Bounty/VDP Reports</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-primary mb-2">2+</div>
+              <div className="text-4xl font-bold text-primary mb-2">3+ </div>
               <div className="text-sm text-muted-foreground">Years Experience</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-primary mb-2">OSCP</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+                CRT • OSCP+ • CPSA
+              </div>
               <div className="text-sm text-muted-foreground">Certified</div>
             </div>
           </div>
